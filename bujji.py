@@ -83,7 +83,7 @@ def get_weather():
     talk("Which city's weather would you like to know?")
     city = input_instruction()
     print(f"City: {city}")
-    api_key = "b8c8e66b51ba95c81462f29421ca89f1"  # Replace with your actual OpenWeatherMap API key
+    api_key = ""  # Replace with your actual OpenWeatherMap API key
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     complete_url = base_url + "appid=" + api_key + "&q=" + city
     response = requests.get(complete_url)
